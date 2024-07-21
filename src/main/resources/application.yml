@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: "posts-service"
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQLDialect
+  datasource:
+    url: jdbc:mysql://localhost:3306/post_service?serverTimezone=UTC
+    username: root
+    password: Popi_07102022
+
+server:
+  port: 8084
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8765/eureka
